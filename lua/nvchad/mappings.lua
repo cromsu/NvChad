@@ -14,9 +14,9 @@ map("n", "<C-k>", "<C-w>k", { desc = "switch window up" })
 
 map("n", "<Esc>", "<cmd>noh<CR>", { desc = "general clear highlights" })
 
-map("n", "<leader>n", "<cmd>set nu!<CR>", { desc = "toggle line number" })
-map("n", "<leader>rn", "<cmd>set rnu!<CR>", { desc = "toggle relative number" })
-map("n", "<leader>ch", "<cmd>NvCheatsheet<CR>", { desc = "toggle nvcheatsheet" })
+-- map("n", "<leader>n", "<cmd>set nu!<CR>", { desc = "toggle line number" })
+-- map("n", "<leader>rn", "<cmd>set rnu!<CR>", { desc = "toggle relative number" })
+map("n", "<leader>tc", "<cmd>NvCheatsheet<CR>", { desc = "toggle nvcheatsheet" })
 
 map("n", "<leader>lf", function()
   require("conform").format { lsp_fallback = true }
@@ -54,10 +54,10 @@ map("n", "<leader>e", "<cmd>NvimTreeFocus<CR>", { desc = "nvimtree focus window"
 -- map("n", "<leader>cm", "<cmd>Telescope git_commits<CR>", { desc = "telescope git commits" })
 -- map("n", "<leader>gt", "<cmd>Telescope git_status<CR>", { desc = "telescope git status" })
 -- map("n", "<leader>pt", "<cmd>Telescope terms<CR>", { desc = "telescope pick hidden term" })
---
-map("n", "<leader>t", function()
-  require("nvchad.themes").open()
-end, { desc = "telescope nvchad themes" })
+
+-- map("n", "<leader>t", function()
+--   require("nvchad.themes").open()
+-- end, { desc = "telescope nvchad themes" })
 
 -- map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "telescope find files" })
 -- map(
